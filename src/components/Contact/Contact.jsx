@@ -27,10 +27,10 @@ const Contact = () => {
       
     emailjs
       .sendForm(
-        "service_niilndo",
-        "template_6z5idye",
+        "service_akcftpp",
+        "template_e1aglac",
         form.current,
-        "VOBt6Akm1LhI5CZG-"
+        "DSpiE3oWipGesrs_V"
       )
       .then(
         (result) => {
@@ -50,18 +50,9 @@ const Contact = () => {
             <Row >
             <Col md={6} className="c-left" >
             <h1 >Get in Touch</h1>
-            <h1 className="yellow">Contact me</h1>
+            <h1 className="yellow">Contact me  at alvinmureithi1@gmail.com</h1>
             </Col>
-            <Col md={6} className="c-right">
-                <form ref={form} onSubmit={sendEmail}>
-                <input type="text" name="from_name" className="user"  placeholder="Name" onChange={handleChange}/>
-                <input type="email" name="reply_to" className="user" placeholder="Email" onChange={handleChange} />
-                <textarea name="message" className="user" placeholder="Message" onChange={handleChange} />
-                <span className='not-done' >{notDone && "Please, fill all the input field"}</span>
-                <Button type="submit" className="button" disabled={done}>Send</Button>
-                <span className='done'>{done && "Thanks for contacting me and be sure i have recieved your mail. If you are testing this functionality then i am confirming this thing working perfectly fine. If you have any serious query then i will reply. Also if you need me, you can conatct me on Linkedin."}</span>
-                </form>
-            </Col>
+            
             </Row>
         </Container>
     )
